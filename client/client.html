@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Psst!</title>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="salsa20.js"/></script>
+    <script src="psst20.js"/></script>
+    <link rel="stylesheet" href="default.css">
+  </head>
+  <body>
+    <div class="welcome">
+      <form id="createform">
+        <input id="createpassword" type="password" placeholder="Password"/>
+        <input type="submit" value="Create chat"/>
+      </form>
+    </div>
+
+    <div class="joinbox" style="display: none;">
+      <form id="joinform">
+        <input id="joinpassword" type="password" placeholder="Password"/>
+        <input type="submit" value="Join"/>
+      </form>
+    </div>
+
+    <div id="chat" style="display: none;">
+      <div class="boxheader" id="localheader">
+        You
+      </div>
+      <div class="chatbox" id="localbox"></div>
+
+      <div class="boxheader" id="remoteheader">
+        Some1
+      </div>
+      <div class="chatbox" id="remotebox"></div>
+    </div>
+  </body>
+<html/>
